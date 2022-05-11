@@ -7,15 +7,15 @@ int max = a;
 int min = b;
 if (b>max)
 {
-    Console.Write("Max = ");
-    Console.WriteLine(max = b);
-    Console.Write("Min = ");
-    Console.WriteLine(min = a);
+   Console.Write("Max = ");
+   Console.WriteLine(b);
+   Console.Write("Min = ");
+   Console.WriteLine(a);
 }
 else
 {
-    Console.Write("Max = ");
-    Console.WriteLine(max = a);
-    Console.Write("Min = ");
-    Console.WriteLine(min = b);
+   Console.Write("Max = ");
+   Console.WriteLine(a);
+   Console.Write("Min = ");
+   Console.WriteLine(b);
 }
