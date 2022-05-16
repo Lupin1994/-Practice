@@ -6,18 +6,20 @@ if (X > 0 && Y > 0)
 {
     Console.WriteLine("First quarter");
 }
-if (X < 0 && Y > 0)
+else if (X < 0 && Y > 0)
 {
     Console.WriteLine("Second quarter");
 }
-if (X < 0 && Y < 0)
+else if (X < 0 && Y < 0)
 {
     Console.WriteLine("Third quarter");
 }
-if (X > 0 && Y < 0)
+else if (X > 0 && Y < 0)
 {
     Console.WriteLine("Fourth quarter");
 }
+else 
+Console.WriteLine("Write X and Y wrong.");
 
 // if (X > 0)
 // {
