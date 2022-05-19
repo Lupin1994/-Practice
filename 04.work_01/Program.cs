@@ -15,8 +15,8 @@ void PrintArray(int[] array)
         Console.Write($"{array[j], }");
     }
 }
-// change(array);
-// PrintArray(array);
+change(array);
+PrintArray(array);
 
 // void change1(int[] array)
 // {
