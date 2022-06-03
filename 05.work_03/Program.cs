@@ -68,19 +68,34 @@
 //     count++;
 // }
 
-Console.Write("Write number : ");
-int num = int.Parse(Console.ReadLine()??"0");
-string result = "";
-string RevResult = "";
-while (num>0)
-{
-    result =result+(num%2).ToString();
-    num = num/2;
-}
-int length=result.Length;
-for(int i = length -1; i>=0;i--)
-{
-    RevResult += result[i];
+// Console.Write("Write number : ");
+// int num = int.Parse(Console.ReadLine()??"0");
+// string result = "";
+// string RevResult = "";
+// while (num>0)
+// {
+//     result =result+(num%2).ToString();
+//     num = num/2;
+// }
+// int length=result.Length;
+// for(int i = length -1; i>=0;i--)
+// {
+//     RevResult += result[i];
 
+// }
+// Console.WriteLine($"{RevResult}");
+Console.Write("Write number : ");
+int Number = int.Parse(Console.ReadLine()??"0");
+int Bit = Number%2;
+int NewNumber = Bit;
+Number = Number/2;
+int i = 10;
+while (Number>0)
+{
+    Bit = Number%2;
+    Number = Number/2;
+    NewNumber= NewNumber+Bit*i;
+    i = i*10;
 }
-Console.WriteLine($"{RevResult}");
+Console.WriteLine(NewNumber);
+
