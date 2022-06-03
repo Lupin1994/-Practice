@@ -1,13 +1,5 @@
-﻿// Написать программу преобразования десятичного числа в двоичное
-// {
-//     int count = col.Length;
-//     int position = 0;
-//     while(position<count)
-//     {
-//         Console.Write(col[position]);
-//         position++;
-//     }
-// }
+﻿// Написать программу преобразования десятичного числа в двоичн
+// .....................Не работает...........................
 // Console.WriteLine("Number : ");
 // int Num = int.Parse(Console.ReadLine() ?? "0");
 // int tmpnumber = Num;
@@ -46,7 +38,7 @@
 // FillArray(array);
 // PrintArray(array.Reverse().ToArray());
 
-
+// ..............My result................................
 // Console.WriteLine("Write number: ");
 // int Num = int.Parse(Console.ReadLine() ?? "0");
 // int j = 0;
@@ -67,7 +59,7 @@
 //     Console.WriteLine($"{count} element array - {k}");
 //     count++;
 // }
-
+// .............Через строку.......................
 // Console.Write("Write number : ");
 // int num = int.Parse(Console.ReadLine()??"0");
 // string result = "";
@@ -84,6 +76,7 @@
 
 // }
 // Console.WriteLine($"{RevResult}");
+//.................Рабочий вариант.....................
 Console.Write("Write number : ");
 int Number = int.Parse(Console.ReadLine()??"0");
 int Bit = Number%2;
