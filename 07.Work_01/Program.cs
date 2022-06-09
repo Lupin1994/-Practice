@@ -65,8 +65,8 @@ int[,] ParsePoints(string[] coordinates)
     int[,] points = new int[coordinates.Length, 2];
     for (int i = 0; i < coordinates.Length; i++)
     {
-        string substring = Substring(coordinates[i], 1, coordinates[i].Length - 1);
-        string[] pointCoordinates = Split(substring,',');
+        string substring = Substring(coordinates[i], 1, coordinates[i].Length - 1); // string substring = coordinates[i].Substring(1,coordinates[i].Length-1);
+        string[] pointCoordinates = Split(substring,','); // string[] pointCoordinates = subsstring.Split(',');
         for(int j = 0;j<pointCoordinates.Length;j++)
         {
             points[i,j] = int.Parse(pointCoordinates[j]);
@@ -85,8 +85,10 @@ if (input == null || input.Length == 0)
 }
 Console.WriteLine("Enter koefficient of scaling: ");
 int k = int.Parse(Console.ReadLine()??"0");
-string[] coordinates = Split(input, ' ');
+string[] coordinates = Split(input, ' '); // string[] coordinates = input.Split(' ');
+// PrintArray(coordinates);
 int[,] points = ParsePoints(coordinates);
+// PrintMatrix(points);
 for(int i=0;i<points.GetLength(0);i++)
 {
     Console.Write($"({points[i,0]*k}, {points[i,1]*k}) ");
